@@ -49,6 +49,17 @@ Invoke-WebRequest -Uri "https://github.com/CYNERZA/cyne-bin/releases/latest/down
 Or simply download `cyne-windows-x86_64.exe` from the [releases page](https://github.com/CYNERZA/cyne-bin/releases/latest) and double-click to run.
 
 ### Termux (Android)
+
+⚠️ **Note**: Precompiled binaries do not work on Termux. Please use pip installation instead.
+
+See [TERMUX_INSTALL.md](TERMUX_INSTALL.md) for detailed Termux installation instructions.
+
+```bash
+# Quick install on Termux
+pkg install python python-pip
+pip install cyne-cli
+cyne
+```
 ```bash
 # Install on ARM64 Android devices
 pkg install wget
